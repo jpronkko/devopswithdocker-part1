@@ -1,0 +1,8 @@
+# in the frontend folder
+docker build . -t example_frontend
+docker run -p 5000:5000 -d example_frontend
+
+# in the backend folder
+docker build . -t example_backend
+docker run -p 8080:8000 -d example_backend
+ 

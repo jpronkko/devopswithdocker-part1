@@ -1,0 +1,7 @@
+# Assuming image was build in the right directory using:
+# docker build . -t web-server
+# and browsing to http port 80
+docker run -p 80:8080 -d --name simple-web-service web-server
+
+# Can browse also with 
+curl localhost:80

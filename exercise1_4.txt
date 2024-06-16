@@ -1,0 +1,10 @@
+docker run -d -it --name curler ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+From another terminal:
+docker exec -it curler bash
+in the container:
+apt update
+apt install curl
+
+Another way regarding action in another terminal:
+docker exec curler sh -c 'apt update; apt install curl'

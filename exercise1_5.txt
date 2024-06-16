@@ -1,0 +1,3 @@
+The "docker image ls" -command gives as image size 83MB for the Ubuntu image and 15.7MB for the Alpine one, 
+the Alpine one is much smaller. The message functionality is the same, please find the commands used in verifying this recorded 
+in the script file: exercise1_5_script.

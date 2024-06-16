@@ -1,0 +1,11 @@
+First terminal:
+docker run -it --name pullexe devopsdockeruh/pull_exercise
+
+Second terminal:
+docker exec -it pullexe sh
+ls
+cat README
+
+From there the password is basics and the response is:
+You found the correct password. Secret message is:
+"This is the secret message"

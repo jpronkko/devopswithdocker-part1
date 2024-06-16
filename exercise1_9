@@ -1,0 +1,4 @@
+docker run -d -v "$(pwd)/text.log:/usr/src/app/text.log" \
+ --name simple-web-srv \
+ devopsdockeruh/simple-web-service:latest
+ 

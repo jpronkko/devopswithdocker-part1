@@ -1,0 +1,53 @@
+Script started on 2024-06-07 14:32:48+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="160" LINES="30"]
+[?2004h]0;jr@xmg: ~/Programming/devopswithdocker/part1[01;32mjr@xmg[00m:[01;34m~/Programming/devopswithdocker/part1[00m$ docker uima[K[K[K[Kimage ls
+[?2004lREPOSITORY                          TAG               IMAGE ID       CREATED       SIZE
+fav_distro                          jammy_jellyfish   67c845845b7d   4 days ago    77.9MB
+ubuntu                              22.04             67c845845b7d   4 days ago    77.9MB
+ubuntu                              jammy_jellyfish   67c845845b7d   4 days ago    77.9MB
+ubuntu                              latest            17c0145030df   8 days ago    76.2MB
+devopsdockeruh/simple-web-service   ubuntu            4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine            fd312adc88e0   3 years ago   15.7MB
+[?2004h]0;jr@xmg: ~/Programming/devopswithdocker/part1[01;32mjr@xmg[00m:[01;34m~/Programming/devopswithdocker/part1[00m$ docker run -d -it --name simple devopsdockeruh/simple-web-service:alpine [K
+[?2004l59ccdf7240152b78be60db54b701062528589f2b8d7951fa64c7da8290dd2010
+[?2004h]0;jr@xmg: ~/Programming/devopswithdocker/part1[01;32mjr@xmg[00m:[01;34m~/Programming/devopswithdocker/part1[00m$ docker aa[Kttta[K[Kach simple
+[?2004lWrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+read escape sequence
+[?2004h]0;jr@xmg: ~/Programming/devopswithdocker/part1[01;32mjr@xmg[00m:[01;34m~/Programming/devopswithdocker/part1[00m$ docker exec -it simple sh
+[?2004l/usr/src/app # [6ncat text.log
+2024-06-07 11:33:21 +0000 UTC
+2024-06-07 11:33:23 +0000 UTC
+2024-06-07 11:33:25 +0000 UTC
+2024-06-07 11:33:27 +0000 UTC
+2024-06-07 11:33:29 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-07 11:33:31 +0000 UTC
+2024-06-07 11:33:33 +0000 UTC
+2024-06-07 11:33:35 +0000 UTC
+2024-06-07 11:33:37 +0000 UTC
+2024-06-07 11:33:39 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-07 11:33:41 +0000 UTC
+2024-06-07 11:33:43 +0000 UTC
+2024-06-07 11:33:45 +0000 UTC
+2024-06-07 11:33:47 +0000 UTC
+2024-06-07 11:33:49 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-07 11:33:51 +0000 UTC
+2024-06-07 11:33:53 +0000 UTC
+2024-06-07 11:33:55 +0000 UTC
+2024-06-07 11:33:57 +0000 UTC
+2024-06-07 11:33:59 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-07 11:34:01 +0000 UTC
+2024-06-07 11:34:03 +0000 UTC
+2024-06-07 11:34:05 +0000 UTC
+2024-06-07 11:34:07 +0000 UTC
+2024-06-07 11:34:09 +0000 UTC
+/usr/src/app # [6nexit
+[?2004h]0;jr@xmg: ~/Programming/devopswithdocker/part1[01;32mjr@xmg[00m:[01;34m~/Programming/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-06-07 14:34:15+03:00 [COMMAND_EXIT_CODE="0"]
